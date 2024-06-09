@@ -79,7 +79,7 @@ If my fork is not yet merged you need to use `qmk clone` to use it.
 Next proceed with the following commands for a simple update/flash:
 
 ```bash
-cd ~/qmk_firmware/keyboards/handwired/dactyl_manuform_pi_pico &&
+cd ~/qmk_firmware/keyboards/handwired/dactyl_manuform_pi_pico/keymaps/default &&
 qmk flash
 ```
 This should build the firmware and try flashing it.
@@ -87,7 +87,9 @@ When qmk says "waiting for drive" unplug your keyboard, then plug it back again 
 It should show up in your file manager, if needed mount it e.g. by clicking on it in Thunar File Manager.
 QMK then should automatically pick it up and complete.
 
-## Setting EPROM
+## Setting EPROM (both QMK and Vial)
+
+(Note: this can be run from Vial directory: `cd ~/vial-qmk/keyboards/handwired/dactyl_manuform_pi_pico/keymaps/vial` and will be less error prone)
 
 If this is your first flash use the following for setting up the EPROM so the keyboard knows which is left and which is right half.
 ```bash
