@@ -1,4 +1,4 @@
-# dactyl_manuform_rp2040
+# dactyl_manuform_pi_pico
 
 ![overview](images/overview.jpg)
 
@@ -9,7 +9,7 @@ This is a dactyl_manuform on Raspberry Pi Pico guide.
 Here is vial firmware fork, which allows hot-configuration of keymaps via [vial.rocks](https://vial.rocks) https://github.com/GustawXYZ/vial-qmk/tree/vial
 
 For now you need to use my fork: https://github.com/GustawXYZ/qmk_firmware
-Hopefully it will get merged and will be available in: https://github.com/qmk_firmware/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform_rp2040
+Hopefully it will get merged and will be available in: https://github.com/qmk_firmware/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform_pi_pico
 
 ## Build
 
