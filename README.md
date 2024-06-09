@@ -6,18 +6,24 @@
 
 This is a dactyl_manuform on Raspberry Pi Pico guide.
 
+### Vial
+
 Here is vial firmware fork, which allows hot-configuration of keymaps via [vial.rocks](https://vial.rocks) https://github.com/GustawXYZ/vial-qmk/tree/vial
+
+### QMK
 
 For now you need to use my fork: https://github.com/GustawXYZ/qmk_firmware
 Hopefully it will get merged and will be available in: https://github.com/qmk_firmware/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform_pi_pico
 
 ## Build
 
+![left-schema](images/left-schema.jpg)
+![right-schema](images/right-schema.jpg)
+
 I strived to make soldering as similar as possible to dactyl_manuform guide.
 
 [abstracthat/dactyl-manuform](https://github.com/abstracthat/dactyl-manuform)
 
-That means thay just swap following pins on the diagrams and you should be fine.
 Switched connections:
 
 |ProMicro|PiPico|
