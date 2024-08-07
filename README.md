@@ -45,7 +45,7 @@ Switched connections:
 
 I used a 4 pin jack 3.5mm connection. It uses SERIAL_USART_FULL_DUPLEX (whatever that means).
 
-Conenctions are as following:
+Connections are as following:
 
 |Left PiPico|Right PiPico|
 |-|-|
@@ -55,6 +55,13 @@ Conenctions are as following:
 |GP8|GP9|
 
 GP8 and GP9 are switch in "X" pattern, so that TX and RX are switched on the other board.
+
+For the keyboard to be able to tell the right side from the lefts - it needs two jumpers to set the `SPLIT_HAND_PIN`:
+
+|Side|Jumper from|to|
+|-|-|-|
+|Left|GP22|3V3|
+|Right|GND|GND|
 
 ## Flashing firmware
 
@@ -70,7 +77,7 @@ If the build fails try `make claen` and `rm -r lib/*` (https://github.com/qmk/qm
 
 If this succeeds you will have ready firmware in .build folder.
 
-To flash, open .build folder in your file editor of choice, and set your keyboard into bootloader mode by holding the RESET button and plugging in the USB. After that you can open the new "drive" that shoud be called something like RPI-PICO, and drag `.build/handwired_dactyl_manuform_pi_pico_default.uf2` to the new drive. This should flash the keyboard and automatically unmount it. Wait a few seconds and repeat for other half (with the same .uf2 file)
+To flash, open .build folder in your file editor of choice, and set your keyboard into bootloader mode by holding the RESET button and plugging in the USB. After that you can open the new "drive" that should be called something like RPI-PICO, and drag `.build/handwired_dactyl_manuform_pi_pico_default.uf2` to the new drive. This should flash the keyboard and automatically unmount it. Wait a few seconds and repeat for other half (with the same .uf2 file)
 
 ### QMK
 
