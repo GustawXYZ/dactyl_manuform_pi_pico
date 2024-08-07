@@ -17,8 +17,6 @@ Hopefully it will get merged and will be available in: https://github.com/qmk_fi
 
 ## Build
 
-WARNING: I've made a mistake with the wiring diagram, the 3v3 and GROUND calbes are marked wrongly on the PiPico. They should be on the other side - where the pins for 3v3 and GROUND are. I will fix the diagrams soon.
-
 ![left-schema](images/left-schema.jpg)
 ![right-schema](images/right-schema.jpg)
 
@@ -61,7 +59,7 @@ For the keyboard to be able to tell the right side from the lefts - it needs two
 |Side|Jumper from|to|
 |-|-|-|
 |Left|GP22|3V3|
-|Right|GND|GND|
+|Right|GP22|GND|
 
 ## Flashing firmware
 
