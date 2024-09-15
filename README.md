@@ -81,6 +81,11 @@ To flash, open .build folder in your file editor of choice, and set your keyboar
 
 You need to set up `qmk` toolchain as per here: https://docs.qmk.fm/#/newbs_building_firmware
 
+and run to make sure qmk is up and working.
+```
+qmk setup
+```
+
 If my fork is not yet merged you need to use `qmk clone` to use it.
 
 Next proceed with the following commands for a simple update/flash:
@@ -93,20 +98,6 @@ This should build the firmware and try flashing it.
 When qmk says "waiting for drive" unplug your keyboard, then plug it back again while holding RESET button on the Pi Pico.
 It should show up in your file manager, if needed mount it e.g. by clicking on it in Thunar File Manager.
 QMK then should automatically pick it up and complete.
-
-## Setting EPROM (both QMK and Vial)
-
-(Note: this can be run from Vial directory: `cd ~/vial-qmk/keyboards/handwired/dactyl_manuform_pi_pico/keymaps/vial` and will be less error prone)
-
-If this is your first flash use the following for setting up the EPROM so the keyboard knows which is left and which is right half.
-```bash
-qmk flash -bl uf2-split-left
-```
-Plug left half while holding RESET.
-```bash
-qmk flash -bl uf2-split-right
-```
-Plug right half while holding RESET.
 
 ## With QMK Configurator
 
