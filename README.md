@@ -1,3 +1,5 @@
+# Moved to: https://codeberg.org/GustawXYZ/dactyl_manuform_pi_pico
+
 # dactyl_manuform_pi_pico
 
 ![dactyl_manuform_pi_pico](https://i.imgur.com/T9b74bI.jpg)
